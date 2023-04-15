@@ -1,0 +1,20 @@
+
+version: 2
+
+models:
+  - name: stg_team_details
+    description: >
+      A list of the few NBA teams that made 2020 playoffs
+    
+    columns:
+      - name: name
+        description: "Name of the team"
+        tests:
+          - is_la_team
+          - not_null
+
+      - name: city
+        description: "The home city of the team."
+
+      - name: state
+        description: "The home state of the team."
